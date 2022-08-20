@@ -1,0 +1,17 @@
+<MyLayout>
+    BoxLayout:
+        orientation: 'vertical'
+        size: root.width, root.height
+        GridLayout:
+            cols: 2
+
+            Button:
+                size_hint:(1,0.5)
+                font_size: 32
+                text: "start"
+                on_press: root.press()
+            Button:
+                size_hint:(1,0.5)
+                font_size: 32
+                text: "end"
+                on_press: root.end()
