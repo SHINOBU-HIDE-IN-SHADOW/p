@@ -1,0 +1,31 @@
+<LoginScreen>
+    name: name
+    pizza:pizza
+    eat: eat
+    GridLayout:
+        cols: 1
+        size: root.width,root.height
+        GridLayout:
+            cols:2
+
+            Label:
+                text: "name"
+            TextInput:
+                id: name
+                multiline: False
+
+            Label:
+                text: "pizza"
+            TextInput:
+                id: pizza
+                multiline: False
+
+            Label:
+                text: "eat"
+            TextInput:
+                id: eat
+                multiline: False
+        Button:
+            text: "submit"
+            font_size: 32
+            on_press: root.press()

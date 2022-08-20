@@ -1,0 +1,36 @@
+#:import utils kivy.utils
+<Login>
+    name: name
+    pizza: pizza
+    eat: eat
+    GridLayout:
+        cols: 1
+        size: root.width , root.height
+
+        GridLayout:
+            cols: 2
+
+            Label:
+                text: "name"
+            TextInput:
+                id: name
+                multiline: False
+
+            Label:
+                text: "pizza"
+            TextInput:
+                id: pizza
+                multiline: False
+
+            Label:
+                text: "eat"
+            TextInput:
+                id: eat
+                multiline: False
+
+        Button:
+            text: "Submit"    
+            font_size: 32  
+            on_press: root.press() 
+            background_normal: ''
+            background_color: (0,0,1,1)    

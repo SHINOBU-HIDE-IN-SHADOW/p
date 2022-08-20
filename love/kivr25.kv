@@ -1,0 +1,32 @@
+<MyLayout>
+    do_default_tab: False
+
+    size_hint: (1,1)
+    pos_hint: {'center_x': 0.5, 'center_y': 0.5}
+
+    tab_pos: 'right_top'
+
+    #ft_top, left_mid, Left_bottom
+    #top_left, top_mid, top_right
+    #right_top , right_mid, right_bottom
+    #bottom_left, bottom_mid, bottom_right
+
+
+    TabbedPanelItem:
+        text: "Tab 1"
+        Label: 
+            text: "hello world"
+
+    TabbedPanelItem:
+        BoxLayout:
+            Label:
+                text: "press button"
+            Button:
+                text: "CLick"
+        
+    TabbedPanelItem:
+        text: "Tab 2"
+
+        Image: 
+            source: "love/iloveu.jpg"
+            

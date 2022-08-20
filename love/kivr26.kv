@@ -1,0 +1,26 @@
+<MyLayout>
+    BoxLayout:
+
+        orientation: 'vertical'
+        size: root.width, root.height
+
+        padding: 50
+        spacing: 50
+
+        Label:
+            id: my_label
+            text: "Hello world"
+            font_size: 32
+
+        Button:
+            size_hint: (0.15,0.12)
+            pos_hint: {'center_x': 0.5}
+            background_color: (0,0,0,0)
+            on_press: root.word_on()
+            on_release: root.word_off()
+
+            Image:
+                id: my_image
+                source: 'love/iloveu.jpg'
+                center_x: self.parent.center_x
+                center_y: self.parent.center_y
